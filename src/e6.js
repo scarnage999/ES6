@@ -11,10 +11,10 @@ class Operaciones {
 }
 //Ejemplo de herencias
 class Extras extends Operaciones{
-  
+
   calcular(){
    return super.calcular() * this.dolar
   }
 }
 
-export default {Operaciones,Extras}
+export {Operaciones,Extras}
