@@ -12,12 +12,15 @@ class App extends Component {
   render() {
 
     let sum = new Operaciones(20,10)
-    let dolar = new Extras(40,50)
+    let extras = new Extras(40,50)
     return (
       <div className="App">
         <Personajes lista={this.state.datos}/>
         <h4>{sum.calcular()}</h4>
-        <h4>{dolar.calcular()}</h4>
+        <h4>{extras.calcular()}</h4>
+        <h4>{extras.calcularIva()}</h4>
+        <h4>{extras.calcularRetenciones()}</h4>
+        <h4>{extras.calcularNumeros()}</h4>
         
       </div>
     );
