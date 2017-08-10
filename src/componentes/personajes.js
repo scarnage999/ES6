@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 
 class Personajes extends Component {
 
-  constructor(props){
-  super(props)
-  }
+
 
   render() {
 

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Personajes from './componentes/personajes';
 import Config from './config'
-import Operaciones from './e6.js'
+import Op from './e6.js'
 
 class App extends Component {
   constructor(props){
@@ -12,11 +11,13 @@ class App extends Component {
   }
   render() {
 
-    let sum = new Operaciones(20,10)
+    let sum = new Op.Operaciones(20,10)
+    let dolar = new Op.Extras(40,50)
     return (
       <div className="App">
         <Personajes lista={this.state.datos}/>
-        <h4>{sum.suma()}</h4>
+        <h4>{sum.calcular()}</h4>
+        <h4>{dolar.calcular()}</h4>
         
       </div>
     );
