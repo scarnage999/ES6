@@ -15,6 +15,7 @@ class App extends Component {
     let extras = new Extras(40,50)
     return (
       <div className="App">
+        <h1>Personajes</h1>
         <Personajes lista={this.state.datos}/>
         <h4>{sum.calcular()}</h4>
         <h4>{extras.calcular()}</h4>
