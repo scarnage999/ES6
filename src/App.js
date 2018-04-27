@@ -22,7 +22,8 @@ class App extends Component {
         <h4>{extras.calcularIva()}</h4>
         <h4>{extras.calcularRetenciones()}</h4>
         <h4>{extras.calcularNumeros()}</h4>
-         <h4>{extras.ObtenerLibro()}</h4>
+        <h4>{extras.ObtenerLibro()}</h4>
+        <h4>{extras.multiplica()}</h4>
         
       </div>
     );
