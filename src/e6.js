@@ -38,6 +38,21 @@ class Extras extends Operaciones{
   calcular(){ 
    return super.calcular() * this.dolar
   }
+
+  /*Destructuring*/
+  ObtenerLibro(){    
+  const libros = {
+    title: 'ego',
+    author: 'rhyan holiday',
+    publisher: {
+    name: 'Penguin'
+    }
 }
+  const {name} = libros.publisher;
+  return name; 
+  }
+}
+
+
 
 export {Operaciones,Extras}
