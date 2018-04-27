@@ -51,6 +51,10 @@ class Extras extends Operaciones{
   const {name} = libros.publisher;
   return name; 
   }
+  /* Parametros por defecto */
+  multiplica(x = 2, y = 3) {
+  return x * y;
+  }
 }
 
 
